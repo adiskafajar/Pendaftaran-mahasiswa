@@ -12,7 +12,6 @@
    define('IMAGE', ASSETS . 'img/');
    define('STYLE', ASSETS . 'SASS/dist/style.css');
    define('SCRIPT', ASSETS . 'JS/script.js');
-   define('BOOTSTRAP', 'https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css');
-   define('BOOTSTRAP_JS', '"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous">');
+   define('eaea', 'https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css');
    define('FONTAWESOME', 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
    define('VUE', 'https://cdn.jsdelivr.net/npm/vue');
