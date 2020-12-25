@@ -45,7 +45,6 @@
 
          if(!$query){
             die("Baka yarou, Kono yarou!!!".$username);
-            // mysqli_error($query);
          }
 
          return $readUsername;
@@ -100,5 +99,3 @@
          }
       }
    }
-
-

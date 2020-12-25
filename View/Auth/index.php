@@ -7,7 +7,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Login page</title>
+   <title>Auth</title>
    <link rel="stylesheet" href="<?= FONTAWESOME ?>">
    <script src="<?= SCRIPT ?>"></script>   
 </head>

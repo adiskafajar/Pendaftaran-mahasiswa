@@ -8,7 +8,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Maba Pages</title>
-   <link rel="stylesheet" href="<?= BOOTSTRAP ?>">
    <link rel="stylesheet" href="<?= FONTAWESOME ?>">
    <script src="<?= SCRIPT ?>"></script>
    <link rel="stylesheet" href="<?= STYLE ?>">
@@ -19,7 +18,7 @@
       <ul>
          <li><a href="?page=home">Home</a></li>
          <li><a href="?page=profile">Profile</a></li>
-         <li><a href="?page=alur">Alur</a></li>
+         <li><a href="?page=alur-pra-register">Alur</a></li>
          <li><a href="?page=bantuan">Bantuan</a></li>
          <li><a href="?page=pembayaran">Pembayaran</a></li>
          <li><a href="?page=pengumuman">Pengumuman</a></li>
@@ -38,11 +37,11 @@
             case 'bantuan': 
                require_once 'bantuan.php'; 
                break;
-            case 'pra-reister': 
-               require_once 'pra-reister.php';
+            case 'alur-register': 
+               require_once 'alur-register.php';
                break;
-            case 'alur': 
-               require_once 'alur.php'; 
+            case 'alur-pra-register': 
+               require_once 'alur-pra-register.php'; 
                break;
             case 'pembayaran': 
                require_once 'pembayaran.php'; 
@@ -63,14 +62,13 @@
       /* config */
       *{
          box-sizing: border-box;
-      } body {
          margin: 0;
          padding: 0;
+      } body {
          font-family: 'Roboto', sans-serif;
          background: url(../../Assets/img/back-img.png) no-repeat center center fixed;
          background-size: cover;
       }
-
       /* nav & head */
       nav{
          height: 90px;
@@ -83,6 +81,7 @@
       } nav ul {
          display: flex;
          align-self: flex-end;
+         margin-bottom: 10px;
       } nav ul li {
          margin: 0 40px 0 0;
          list-style: none;
@@ -173,27 +172,42 @@
       } .profile .data  div:nth-child(odd) {
          background-color: #F1ECEC;
       }
-      /* alur */
-      .alur {
-         width: 1500px;
-         height: 90%;
+      /* alur pra register */
+      .alur-pra-register{
          margin: auto;
          background-color: white;
-         padding: 50px; 
-         
-      } .alur div {
-         text-align: center;
-      } .alur div img {
-         margin: 0 0 20px 0;
-      } .alur .box {
-         width: 300px;
-      } .alur .satu {
-         display: flex;
-         justify-content: space-between;
-      } .alur .dua {
-         display: flex;
-         justify-content: space-between;
-         /* margin: 0 180px 0 0; */
+      } .alur-pra-register .title{
+         font-size: 40px;
+         font-weight: 700;
+         margin: 10px;
+      } .alur-pra-register img{
+         /* width: 300px;
+         height: 300px; */
+      } .alur-pra-register .btn-alur-register {
+         text-align: right;
+         margin-right: 20px;
+      } .alur-pra-register .btn-alur-register a{
+         text-decoration: none;
+         color: red;
+         font-size: 30px;
+         font-weight: 700;
+      }
+      /* alur register */
+      .alur-register{
+         margin: auto;
+         background-color: white;
+      } .alur-register .title{
+         font-size: 40px;
+         font-weight: 700;
+         margin: 10px;
+      } .alur-register .btn-alur-register {
+         text-align: right;
+         margin-right: 20px;
+      } .alur-register .btn-alur-register a{
+         text-decoration: none;
+         color: red;
+         font-size: 30px;
+         font-weight: 700;
       }
 
       /* Bantuan */

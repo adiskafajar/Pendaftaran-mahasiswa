@@ -1,11 +1,12 @@
 <?php 
-   session_start();
    require_once '../../init.php';
-
+   
    // session
+   session_start();
    if(!$_SESSION['admin']){
       header('location:'.BASEURL);
    }
+   
    // instansiasi class Admin
    $admin = new Admin();
 
@@ -20,7 +21,7 @@
 
    // title conditional
    switch($content){
-      case 'info':
+      case 'info_data':
          $title = 'PROFILE DATA';
          break;
       case 'create':
@@ -69,7 +70,6 @@
          session_destroy();
          header('location:'.BASEURL);
          break;
-   
       default: 
          $datas = $admin->readData();
          break;
